@@ -1,0 +1,2014 @@
+{
+	"info": {
+		"_postman_id": "2fdfdce2-bf84-4591-85c6-52f7c5c4ace1",
+		"name": "Examen Angel Patino",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36356916"
+	},
+	"item": [
+		{
+			"name": "app",
+			"item": [
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "get User By Id 1",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/app/users/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/app/users/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"users",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id_ap\": \"<integer>\",\n  \"username_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}"
+										}
+									]
+								},
+								{
+									"name": "update User 1",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"username_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/app/users/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"username_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/app/users/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"users",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id_ap\": \"<integer>\",\n  \"username_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}"
+										}
+									]
+								},
+								{
+									"name": "delete User 1",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/app/users/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"users",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/app/users/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"users",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "count",
+							"item": [
+								{
+									"name": "count Users",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/app/users/count",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"users",
+												"count"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/app/users/count",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"users",
+														"count"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "<long>"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "get All Users 1",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/app/users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"users"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/app/users",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"users"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id_ap\": \"<integer>\",\n    \"username_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  {\n    \"id_ap\": \"<integer>\",\n    \"username_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "create User 1",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"username_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/app/users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"users"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"username_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/app/users",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"users"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id_ap\": \"<integer>\",\n  \"username_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "favorities",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "get Favorities By Id",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/app/favorities/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"favorities",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/app/favorities/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"favorities",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id_ap\": \"<integer>\",\n  \"user_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"username_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"books_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"title_ap\": \"<string>\",\n    \"publishingYear_ap\": \"<string>\",\n    \"genre_ap\": \"<string>\",\n    \"author_ap\": {\n      \"id_ap\": \"<integer>\",\n      \"firstName_ap\": \"<string>\",\n      \"lastName_ap\": \"<string>\",\n      \"createdAt_ap\": \"<dateTime>\",\n      \"updatedAt_ap\": \"<dateTime>\"\n    },\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt\": \"<dateTime>\",\n  \"updatedAt\": \"<dateTime>\"\n}"
+										}
+									]
+								},
+								{
+									"name": "update Favorities",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"user_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"username_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"books_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"title_ap\": \"<string>\",\n    \"publishingYear_ap\": \"<string>\",\n    \"genre_ap\": \"<string>\",\n    \"author_ap\": {\n      \"id_ap\": \"<integer>\",\n      \"firstName_ap\": \"<string>\",\n      \"lastName_ap\": \"<string>\",\n      \"createdAt_ap\": \"<dateTime>\",\n      \"updatedAt_ap\": \"<dateTime>\"\n    },\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt\": \"<dateTime>\",\n  \"updatedAt\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/app/favorities/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"favorities",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"user_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"username_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"books_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"title_ap\": \"<string>\",\n    \"publishingYear_ap\": \"<string>\",\n    \"genre_ap\": \"<string>\",\n    \"author_ap\": {\n      \"id_ap\": \"<integer>\",\n      \"firstName_ap\": \"<string>\",\n      \"lastName_ap\": \"<string>\",\n      \"createdAt_ap\": \"<dateTime>\",\n      \"updatedAt_ap\": \"<dateTime>\"\n    },\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt\": \"<dateTime>\",\n  \"updatedAt\": \"<dateTime>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/app/favorities/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"favorities",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id_ap\": \"<integer>\",\n  \"user_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"username_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"books_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"title_ap\": \"<string>\",\n    \"publishingYear_ap\": \"<string>\",\n    \"genre_ap\": \"<string>\",\n    \"author_ap\": {\n      \"id_ap\": \"<integer>\",\n      \"firstName_ap\": \"<string>\",\n      \"lastName_ap\": \"<string>\",\n      \"createdAt_ap\": \"<dateTime>\",\n      \"updatedAt_ap\": \"<dateTime>\"\n    },\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt\": \"<dateTime>\",\n  \"updatedAt\": \"<dateTime>\"\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "get All Favorities",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/app/favorities",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"favorities"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/app/favorities",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"favorities"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id_ap\": \"<integer>\",\n    \"user_id_appd\": {\n      \"id_ap\": \"<integer>\",\n      \"username_ap\": \"<string>\",\n      \"createdAt_ap\": \"<dateTime>\",\n      \"updatedAt_ap\": \"<dateTime>\"\n    },\n    \"books_id_appd\": {\n      \"id_ap\": \"<integer>\",\n      \"title_ap\": \"<string>\",\n      \"publishingYear_ap\": \"<string>\",\n      \"genre_ap\": \"<string>\",\n      \"author_ap\": {\n        \"id_ap\": \"<integer>\",\n        \"firstName_ap\": \"<string>\",\n        \"lastName_ap\": \"<string>\",\n        \"createdAt_ap\": \"<dateTime>\",\n        \"updatedAt_ap\": \"<dateTime>\"\n      },\n      \"createdAt_ap\": \"<dateTime>\",\n      \"updatedAt_ap\": \"<dateTime>\"\n    },\n    \"createdAt\": \"<dateTime>\",\n    \"updatedAt\": \"<dateTime>\"\n  },\n  {\n    \"id_ap\": \"<integer>\",\n    \"user_id_appd\": {\n      \"id_ap\": \"<integer>\",\n      \"username_ap\": \"<string>\",\n      \"createdAt_ap\": \"<dateTime>\",\n      \"updatedAt_ap\": \"<dateTime>\"\n    },\n    \"books_id_appd\": {\n      \"id_ap\": \"<integer>\",\n      \"title_ap\": \"<string>\",\n      \"publishingYear_ap\": \"<string>\",\n      \"genre_ap\": \"<string>\",\n      \"author_ap\": {\n        \"id_ap\": \"<integer>\",\n        \"firstName_ap\": \"<string>\",\n        \"lastName_ap\": \"<string>\",\n        \"createdAt_ap\": \"<dateTime>\",\n        \"updatedAt_ap\": \"<dateTime>\"\n      },\n      \"createdAt_ap\": \"<dateTime>\",\n      \"updatedAt_ap\": \"<dateTime>\"\n    },\n    \"createdAt\": \"<dateTime>\",\n    \"updatedAt\": \"<dateTime>\"\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "create Favorities",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"user_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"username_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"books_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"title_ap\": \"<string>\",\n    \"publishingYear_ap\": \"<string>\",\n    \"genre_ap\": \"<string>\",\n    \"author_ap\": {\n      \"id_ap\": \"<integer>\",\n      \"firstName_ap\": \"<string>\",\n      \"lastName_ap\": \"<string>\",\n      \"createdAt_ap\": \"<dateTime>\",\n      \"updatedAt_ap\": \"<dateTime>\"\n    },\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt\": \"<dateTime>\",\n  \"updatedAt\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/app/favorities",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"favorities"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"user_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"username_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"books_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"title_ap\": \"<string>\",\n    \"publishingYear_ap\": \"<string>\",\n    \"genre_ap\": \"<string>\",\n    \"author_ap\": {\n      \"id_ap\": \"<integer>\",\n      \"firstName_ap\": \"<string>\",\n      \"lastName_ap\": \"<string>\",\n      \"createdAt_ap\": \"<dateTime>\",\n      \"updatedAt_ap\": \"<dateTime>\"\n    },\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt\": \"<dateTime>\",\n  \"updatedAt\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/app/favorities",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"favorities"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id_ap\": \"<integer>\",\n  \"user_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"username_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"books_id_appd\": {\n    \"id_ap\": \"<integer>\",\n    \"title_ap\": \"<string>\",\n    \"publishingYear_ap\": \"<string>\",\n    \"genre_ap\": \"<string>\",\n    \"author_ap\": {\n      \"id_ap\": \"<integer>\",\n      \"firstName_ap\": \"<string>\",\n      \"lastName_ap\": \"<string>\",\n      \"createdAt_ap\": \"<dateTime>\",\n      \"updatedAt_ap\": \"<dateTime>\"\n    },\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt\": \"<dateTime>\",\n  \"updatedAt\": \"<dateTime>\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "books",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "get Book By Id",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/app/books/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"books",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/app/books/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"books",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id_ap\": \"<integer>\",\n  \"title_ap\": \"<string>\",\n  \"publishingYear_ap\": \"<string>\",\n  \"genre_ap\": \"<string>\",\n  \"author_ap\": {\n    \"id_ap\": \"<integer>\",\n    \"firstName_ap\": \"<string>\",\n    \"lastName_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}"
+										}
+									]
+								},
+								{
+									"name": "update Book",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"title_ap\": \"<string>\",\n  \"publishingYear_ap\": \"<string>\",\n  \"genre_ap\": \"<string>\",\n  \"author_ap\": {\n    \"id_ap\": \"<integer>\",\n    \"firstName_ap\": \"<string>\",\n    \"lastName_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/app/books/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"books",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"title_ap\": \"<string>\",\n  \"publishingYear_ap\": \"<string>\",\n  \"genre_ap\": \"<string>\",\n  \"author_ap\": {\n    \"id_ap\": \"<integer>\",\n    \"firstName_ap\": \"<string>\",\n    \"lastName_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/app/books/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"books",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id_ap\": \"<integer>\",\n  \"title_ap\": \"<string>\",\n  \"publishingYear_ap\": \"<string>\",\n  \"genre_ap\": \"<string>\",\n  \"author_ap\": {\n    \"id_ap\": \"<integer>\",\n    \"firstName_ap\": \"<string>\",\n    \"lastName_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}"
+										}
+									]
+								},
+								{
+									"name": "delete Book",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/app/books/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"books",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/app/books/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"books",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "get All Books",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/app/books",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"books"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/app/books",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"books"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id_ap\": \"<integer>\",\n    \"title_ap\": \"<string>\",\n    \"publishingYear_ap\": \"<string>\",\n    \"genre_ap\": \"<string>\",\n    \"author_ap\": {\n      \"id_ap\": \"<integer>\",\n      \"firstName_ap\": \"<string>\",\n      \"lastName_ap\": \"<string>\",\n      \"createdAt_ap\": \"<dateTime>\",\n      \"updatedAt_ap\": \"<dateTime>\"\n    },\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  {\n    \"id_ap\": \"<integer>\",\n    \"title_ap\": \"<string>\",\n    \"publishingYear_ap\": \"<string>\",\n    \"genre_ap\": \"<string>\",\n    \"author_ap\": {\n      \"id_ap\": \"<integer>\",\n      \"firstName_ap\": \"<string>\",\n      \"lastName_ap\": \"<string>\",\n      \"createdAt_ap\": \"<dateTime>\",\n      \"updatedAt_ap\": \"<dateTime>\"\n    },\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "create Book",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"title_ap\": \"<string>\",\n  \"publishingYear_ap\": \"<string>\",\n  \"genre_ap\": \"<string>\",\n  \"author_ap\": {\n    \"id_ap\": \"<integer>\",\n    \"firstName_ap\": \"<string>\",\n    \"lastName_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/app/books",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"books"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"title_ap\": \"<string>\",\n  \"publishingYear_ap\": \"<string>\",\n  \"genre_ap\": \"<string>\",\n  \"author_ap\": {\n    \"id_ap\": \"<integer>\",\n    \"firstName_ap\": \"<string>\",\n    \"lastName_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/app/books",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"books"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id_ap\": \"<integer>\",\n  \"title_ap\": \"<string>\",\n  \"publishingYear_ap\": \"<string>\",\n  \"genre_ap\": \"<string>\",\n  \"author_ap\": {\n    \"id_ap\": \"<integer>\",\n    \"firstName_ap\": \"<string>\",\n    \"lastName_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "authors",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "get Author By Id",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/app/authors/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"authors",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/app/authors/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"authors",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id_ap\": \"<integer>\",\n  \"firstName_ap\": \"<string>\",\n  \"lastName_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}"
+										}
+									]
+								},
+								{
+									"name": "update Author",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"firstName_ap\": \"<string>\",\n  \"lastName_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/app/authors/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"authors",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"firstName_ap\": \"<string>\",\n  \"lastName_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/app/authors/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"authors",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id_ap\": \"<integer>\",\n  \"firstName_ap\": \"<string>\",\n  \"lastName_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}"
+										}
+									]
+								},
+								{
+									"name": "delete Author",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/app/authors/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"authors",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/app/authors/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"authors",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "with-books",
+							"item": [
+								{
+									"name": "get All Authors With Books",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/app/authors/with-books",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"authors",
+												"with-books"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/app/authors/with-books",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"authors",
+														"with-books"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  [],\n  []\n]"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "book-author",
+							"item": [
+								{
+									"name": "get Author Of Book",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/app/authors/book-author?title=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"authors",
+												"book-author"
+											],
+											"query": [
+												{
+													"key": "title",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/app/authors/book-author?title=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"authors",
+														"book-author"
+													],
+													"query": [
+														{
+															"key": "title",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  [],\n  []\n]"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "get All Authors",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/app/authors",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"authors"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/app/authors",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"authors"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"id_ap\": \"<integer>\",\n    \"firstName_ap\": \"<string>\",\n    \"lastName_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  },\n  {\n    \"id_ap\": \"<integer>\",\n    \"firstName_ap\": \"<string>\",\n    \"lastName_ap\": \"<string>\",\n    \"createdAt_ap\": \"<dateTime>\",\n    \"updatedAt_ap\": \"<dateTime>\"\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "create Author",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"firstName_ap\": \"<string>\",\n  \"lastName_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/app/authors",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"app",
+										"authors"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id_ap\": \"<integer>\",\n  \"firstName_ap\": \"<string>\",\n  \"lastName_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/app/authors",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"authors"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id_ap\": \"<integer>\",\n  \"firstName_ap\": \"<string>\",\n  \"lastName_ap\": \"<string>\",\n  \"createdAt_ap\": \"<dateTime>\",\n  \"updatedAt_ap\": \"<dateTime>\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "numeros",
+					"item": [
+						{
+							"name": "guardar",
+							"item": [
+								{
+									"name": "{numero}",
+									"item": [
+										{
+											"name": "guardar Numero",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/app/numeros/guardar/:numero",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"numeros",
+														"guardar",
+														":numero"
+													],
+													"variable": [
+														{
+															"key": "numero",
+															"value": "<long>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/app/numeros/guardar/:numero",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"app",
+																"numeros",
+																"guardar",
+																":numero"
+															],
+															"variable": [
+																{
+																	"key": "numero"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "tabla",
+							"item": [
+								{
+									"name": "{numero}",
+									"item": [
+										{
+											"name": "determinar Tabla",
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/app/numeros/tabla/:numero",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"numeros",
+														"tabla",
+														":numero"
+													],
+													"variable": [
+														{
+															"key": "numero",
+															"value": "<long>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "*/*"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/app/numeros/tabla/:numero",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"app",
+																"numeros",
+																"tabla",
+																":numero"
+															],
+															"variable": [
+																{
+																	"key": "numero"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "*/*"
+														}
+													],
+													"cookie": [],
+													"body": "<string>"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "pares",
+							"item": [
+								{
+									"name": "obtener Pares",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/app/numeros/pares",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"numeros",
+												"pares"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/app/numeros/pares",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"numeros",
+														"pares"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"id_ap\": \"<long>\",\n    \"numero_ap\": \"<long>\"\n  },\n  {\n    \"id_ap\": \"<long>\",\n    \"numero_ap\": \"<long>\"\n  }\n]"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "impares",
+							"item": [
+								{
+									"name": "obtener Impares",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/app/numeros/impares",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"app",
+												"numeros",
+												"impares"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/app/numeros/impares",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"app",
+														"numeros",
+														"impares"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  {\n    \"id_ap\": \"<long>\",\n    \"numero_ap\": \"<long>\"\n  },\n  {\n    \"id_ap\": \"<long>\",\n    \"numero_ap\": \"<long>\"\n  }\n]"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "doc",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/doc/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"doc",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/doc/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"doc",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080"
+		}
+	]
+}
